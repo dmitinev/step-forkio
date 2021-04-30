@@ -1,8 +1,7 @@
 .header {
   position: relative;
-  &__container{
-    display: flex;
-    justify-content: space-between;
+  &__nav {
+    margin-top: 30px;
   }
   &::before{
     content: "";
@@ -16,6 +15,11 @@
     background-size: cover;
     background-position: center;
   }
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 .container {
@@ -24,6 +28,16 @@
   max-width: 1200px;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.header__content-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo{
+  margin-top: 30px;
 }
 
 .logo {
@@ -73,4 +87,16 @@
   font-weight: 700;
   color: $violetText;
   background-color: #ffffff;
+}
+
+.title {
+  @include textReset;
+  @include montserratFont;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 82px;
+}
+
+.header__title {
+  margin-top: 126px;
 }
