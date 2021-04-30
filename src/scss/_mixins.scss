@@ -11,3 +11,12 @@
   padding-left: 0;
   list-style: none;
 }
+
+@mixin textReset {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@mixin linkReset {
+  text-decoration: none;
+}

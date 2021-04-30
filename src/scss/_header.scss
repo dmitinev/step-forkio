@@ -1,0 +1,61 @@
+.header {
+  position: relative;
+  &__container{
+    display: flex;
+    justify-content: space-between;
+  }
+  &::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url("../img/banner_image_macbook.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  @include linkReset;
+}
+
+.logo__text {
+  @include latoFont;
+  @include textReset;
+  margin-left: 17px;
+  text-transform: uppercase;
+  color: $violetText;
+  font-weight: 700;
+}
+
+.navigation {
+  display: flex;
+  @include montserratFont;
+  font-weight: 700;
+}
+
+.navigation__menu {
+  @include list-reset;
+  width: 527px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 49px;
+  &-link {
+    @include linkReset;
+    color: #fff;
+  }
+}
