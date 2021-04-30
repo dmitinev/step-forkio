@@ -15,6 +15,7 @@
 @mixin textReset {
   margin-top: 0;
   margin-bottom: 0;
+  display: inline-flex;
 }
 
 @mixin linkReset {

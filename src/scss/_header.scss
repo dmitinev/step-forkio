@@ -1,5 +1,6 @@
 .header {
   position: relative;
+  min-height: 929px;
   &__nav {
     margin-top: 30px;
   }
@@ -12,7 +13,7 @@
     left: 0;
     z-index: -1;
     background-image: url("../img/banner_image_macbook.jpg");
-    background-size: cover;
+    background-size: 100%;
     background-position: 50% 40%;
   }
   &__container {
@@ -136,4 +137,15 @@
   top: calc(100% + 32px);
   left: 50%;
   transform: translate(-50%, -100%);
+}
+
+.header__trial-text {
+  @include textReset;
+  @include montserratFont;
+  font-size: 14px;
+  color: #848E97;
+  position: absolute;
+  left: 50%;
+  top: calc(100% + 19px + 32px);
+  transform: translateX(-50%);
 }
