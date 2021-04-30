@@ -2,7 +2,6 @@
   position: relative;
   min-height: 929px;
   &__nav {
-    margin-top: 30px;
   }
   &::before{
     content: "";
@@ -34,11 +33,13 @@
 .header__content-wrapper {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 31px;
 }
 
 .header__logo{
-  margin-top: 30px;
+  margin-right: auto;
 }
 
 .logo {
@@ -65,14 +66,14 @@
 
 .navigation__menu {
   @include list-reset;
-  width: 527px;
+  min-width: 527px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-right: 49px;
   &-link {
     @include linkReset;
-    color: #fff;
+    color: $violetText;
     font-size: 16px;
   }
 }
@@ -86,8 +87,8 @@
   cursor: pointer;
   font-size: 16px;
   font-weight: 700;
-  color: $violetText;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: $violetText;
 }
 
 .title {
