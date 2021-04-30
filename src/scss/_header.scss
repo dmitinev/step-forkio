@@ -43,6 +43,7 @@
 
 .navigation {
   display: flex;
+  align-items: center;
   @include montserratFont;
   font-weight: 700;
 }
@@ -57,5 +58,19 @@
   &-link {
     @include linkReset;
     color: #fff;
+    font-size: 16px;
   }
+}
+
+.navigation__btn {
+  width: 145px;
+  height: 37px;
+  padding: 0;
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  color: $violetText;
+  background-color: #ffffff;
 }
