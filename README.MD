@@ -1,8 +1,8 @@
 **Technologies used:**
-HTML
-SCSS
-JS
-GULP DEVELOPMENT WORKFLOW
+1) HTML
+2) SCSS
+3) JS
+4) GULP DEVELOPMENT WORKFLOW
 
 **Project participants:**
 Dmitry Mitinev
