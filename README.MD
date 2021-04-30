@@ -12,5 +12,6 @@ Vitalii Tabanets
 1) Project skeleton
 2) GULP setup
 3) GITHUB repository setup 
+4) section: header for desktops
 
 **Tasks Done by Vitalii Tabanets:**
