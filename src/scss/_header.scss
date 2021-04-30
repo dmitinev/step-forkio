@@ -123,3 +123,17 @@
   margin-top: 19px;
   margin-bottom: 459px;
 }
+
+.navigation__download-btn {
+  @include montserratFont;
+  background-color: $violetText;
+  @extend .navigation__btn;
+  color: #ffffff;
+  width: 390px;
+  height: 62px;
+  font-size: 21px;
+  position: absolute;
+  top: calc(100% + 32px);
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
