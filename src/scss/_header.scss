@@ -13,7 +13,7 @@
     z-index: -1;
     background-image: url("../img/banner_image_macbook.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: 50% 40%;
   }
   &__container {
     display: flex;
@@ -97,6 +97,29 @@
   font-size: 82px;
 }
 
+.subtitle {
+  @include textReset;
+  @include latoFont;
+  color: $violetText;
+  font-size: 30px;
+}
+
+.description {
+  @include textReset;
+  @include montserratFont;
+  color: #848E97;
+  text-transform: uppercase;
+}
+
+.header__subtitle {
+  margin-top: 19px;
+}
+
 .header__title {
   margin-top: 126px;
+}
+
+.header__version-description {
+  margin-top: 19px;
+  margin-bottom: 459px;
 }
