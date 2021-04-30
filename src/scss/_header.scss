@@ -1,0 +1,151 @@
+.header {
+  position: relative;
+  min-height: 929px;
+  &__nav {
+    margin-top: 30px;
+  }
+  &::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url("../img/banner_image_macbook.jpg");
+    background-size: 100%;
+    background-position: 50% 40%;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.header__content-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo{
+  margin-top: 30px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  @include linkReset;
+}
+
+.logo__text {
+  @include latoFont;
+  @include textReset;
+  margin-left: 17px;
+  text-transform: uppercase;
+  color: $violetText;
+  font-weight: 700;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  @include montserratFont;
+  font-weight: 700;
+}
+
+.navigation__menu {
+  @include list-reset;
+  width: 527px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 49px;
+  &-link {
+    @include linkReset;
+    color: #fff;
+    font-size: 16px;
+  }
+}
+
+.navigation__btn {
+  width: 145px;
+  height: 37px;
+  padding: 0;
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  color: $violetText;
+  background-color: #ffffff;
+}
+
+.title {
+  @include textReset;
+  @include montserratFont;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 82px;
+}
+
+.subtitle {
+  @include textReset;
+  @include latoFont;
+  color: $violetText;
+  font-size: 30px;
+}
+
+.description {
+  @include textReset;
+  @include montserratFont;
+  color: #848E97;
+  text-transform: uppercase;
+}
+
+.header__subtitle {
+  margin-top: 19px;
+}
+
+.header__title {
+  margin-top: 126px;
+}
+
+.header__version-description {
+  margin-top: 19px;
+  margin-bottom: 459px;
+}
+
+.navigation__download-btn {
+  @include montserratFont;
+  background-color: $violetText;
+  @extend .navigation__btn;
+  color: #ffffff;
+  width: 390px;
+  height: 62px;
+  font-size: 21px;
+  position: absolute;
+  top: calc(100% + 32px);
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+
+.header__trial-text {
+  @include textReset;
+  @include montserratFont;
+  font-size: 14px;
+  color: #848E97;
+  position: absolute;
+  left: 50%;
+  top: calc(100% + 19px + 32px);
+  transform: translateX(-50%);
+}
