@@ -1,0 +1,13 @@
+@mixin latoFont {
+  font-family: "Lato", sans-serif;
+}
+
+@mixin montserratFont {
+  font-family: Montserrat, sans-serif;
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
