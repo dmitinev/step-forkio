@@ -13,5 +13,6 @@ Vitalii Tabanets
 2) GULP setup
 3) GITHUB repository setup 
 4) section: header for desktops
+5) section: People Are Talking About Fork for desktops
 
 **Tasks Done by Vitalii Tabanets:**
