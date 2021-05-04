@@ -33,6 +33,15 @@
     grid-template-columns: repeat(auto-fill, minmax(324px, 1fr));
     grid-row-gap: 112px;
   }
+  &__text {
+    color: #A291A5;
+    @include textReset;
+    @include latoFont;
+    margin-top: 118px;
+    font-size: 14px;
+    text-align: center;
+    max-width: 887px;
+  }
 }
 
 .reviews__item {
