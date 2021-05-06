@@ -14,5 +14,9 @@ Vitalii Tabanets
 3) GITHUB repository setup 
 4) section: header for desktops
 5) section: People Are Talking About Fork for desktops
+6) section: header for (max-width: 992px) and (min-width: 481px)
+was done.
+7) section: People Are Talking About Fork for (max-width: 992px) and (min-width: 481px)
+   was done.
 
 **Tasks Done by Vitalii Tabanets:**
