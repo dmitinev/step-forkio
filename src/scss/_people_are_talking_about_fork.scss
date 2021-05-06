@@ -12,7 +12,10 @@
     left: 0;
     z-index: -1;
     background-image: url("../img/testmonials-bg 1.jpg");
-    background-size: 100%;
+    background-size: cover;
+    @include mediumScreen {
+      background-position: center;
+    }
   }
   &__title{
     @include textReset;
@@ -50,12 +53,19 @@
     text-align: center;
     max-width: 887px;
     position: relative;
+    @include mediumScreen {
+      margin-top: 67px;
+    }
     &-underline {
-      width: 780px;
+      max-width: 780px;
+      width: 100%;
       height: 2px;
       background-color: #645766;
       margin: 0;
       border: none;
+      @include mediumScreen {
+        max-width: 555px;
+      }
     }
   }
 }
