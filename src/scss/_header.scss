@@ -15,6 +15,9 @@
   font-weight: 700;
   color: #ffffff;
   font-size: 82px;
+  @include mediumScreen {
+    font-size: 72px;
+  }
 }
 
 .subtitle {
@@ -22,6 +25,9 @@
   @include latoFont;
   color: $violetText;
   font-size: 30px;
+  @include mediumScreen {
+    font-size: 24px;
+  }
 }
 
 .description {
@@ -29,11 +35,18 @@
   @include montserratFont;
   color: #848E97;
   text-transform: uppercase;
+  font-size: 16px;
+  @include mediumScreen {
+    font-size: 14px;
+  }
 }
 
 .header {
   position: relative;
   min-height: 929px;
+  @include mediumScreen {
+    min-height: 868px;
+  }
   &::before{
     content: "";
     width: 100%;
@@ -67,6 +80,8 @@
       padding-top: 22px;
       padding-bottom: 18px;
       background-color: #27262A;
+      padding-left: 10px;
+      padding-right: 10px;
       position: relative;
       &::before {
         content: "";
@@ -107,10 +122,12 @@
   }
   &__title {
     margin-top: 126px;
+    @include mediumScreen{
+      margin-top: 69px;
+    }
   }
   &__version-description {
     margin-top: 19px;
-    margin-bottom: 459px;
   }
   &__trial-text {
     @include textReset;
