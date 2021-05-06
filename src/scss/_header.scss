@@ -34,8 +34,6 @@
 .header {
   position: relative;
   min-height: 929px;
-  &__nav {
-  }
   &::before{
     content: "";
     width: 100%;
@@ -59,9 +57,50 @@
     justify-content: flex-end;
     align-items: center;
     margin-top: 31px;
+    @include mediumScreen {
+      display: grid;
+      grid-template-columns: [logo] 1fr [buy_btn] 1fr;
+      grid-template-rows: [first] auto [nav_menu] auto;
+      grid-auto-rows: auto;
+      grid-row-gap: 22px;
+      margin-top: 0;
+      padding-top: 22px;
+      padding-bottom: 18px;
+      background-color: #27262A;
+      position: relative;
+      &::before {
+        content: "";
+        display: block;
+        background-color: #27262A;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30%;
+        height: 100%;
+        transform: translateX(-10px);
+        z-index: -1;
+      }
+      &::after{
+        content: "";
+        display: block;
+        background-color: #27262A;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30%;
+        height: 100%;
+        transform: translateX(10px);
+        z-index: -1;
+      }
+    }
   }
   &__logo {
     margin-right: auto;
+    @include mediumScreen{
+      grid-column: logo;
+      grid-row: first;
+      margin-right: 0;
+    }
   }
   &__subtitle {
     margin-top: 19px;
@@ -120,6 +159,11 @@
   align-items: center;
   @include montserratFont;
   font-weight: 700;
+  @include mediumScreen {
+    grid-column: logo / end;
+    grid-row: nav_menu;
+    width: 100%;
+  }
   &__menu {
     @include list-reset;
     min-width: 527px;
@@ -127,6 +171,11 @@
     justify-content: space-between;
     align-items: center;
     margin-right: 49px;
+    @include mediumScreen {
+      margin-right: 0;
+      width: 100%;
+      justify-content: space-evenly;
+    }
     &-link {
       text-decoration: none;
       color: $violetText;
@@ -147,6 +196,11 @@
     font-weight: 700;
     color: #ffffff;
     background-color: $violetText;
+    @include mediumScreen {
+      grid-column: buy_btn;
+      grid-row: first;
+      justify-self: end;
+    }
     &:hover{
       background-color: #FFFFFF;
       color: $violetText;
