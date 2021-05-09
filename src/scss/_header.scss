@@ -1,104 +1,5 @@
 @import "variables";
 @import "mixins";
-<<<<<<< HEAD
-=======
-.header {
-  position: relative;
-  min-height: 929px;
-  &__nav {
-  }
-  &::before{
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    background-image: url("../img/banner_image_macbook.jpg");
-    background-size: 100%;
-    background-position: 50% 40%;
-  }
-  &__container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-}
->>>>>>> second
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1200px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-<<<<<<< HEAD
-=======
-.header__content-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-top: 31px;
-}
-
-.header__logo{
-  margin-right: auto;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-}
-
-.logo__text {
-  @include latoFont;
-  @include textReset;
-  margin-left: 17px;
-  text-transform: uppercase;
-  color: $violetText;
-  font-weight: 700;
-}
-
-.navigation {
-  display: flex;
-  align-items: center;
-  @include montserratFont;
-  font-weight: 700;
-}
-
-.navigation__menu {
-  @include list-reset;
-  min-width: 527px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-right: 49px;
-  &-link {
-    text-decoration: none;
-    color: $violetText;
-    font-size: 16px;
-  }
-}
-
-.navigation__btn {
-  width: 145px;
-  height: 37px;
-  padding: 0;
-  border-radius: 40px;
-  border: 0;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 700;
-  color: #ffffff;
-  background-color: $violetText;
-}
-
->>>>>>> second
 .title {
   @include textReset;
   @include montserratFont;
@@ -123,7 +24,7 @@
 .description {
   @include textReset;
   @include montserratFont;
-  color: #848E97;
+  color: #848e97;
   text-transform: uppercase;
   font-size: 16px;
   @include mediumScreen {
@@ -137,7 +38,7 @@
   @include mediumScreen {
     min-height: 868px;
   }
-  &::before{
+  &::before {
     content: "";
     width: 100%;
     height: 100%;
@@ -167,13 +68,13 @@
       grid-auto-rows: auto;
       grid-row-gap: 22px;
       margin-top: 0;
-      background-color: #27262A;
+      background-color: #27262a;
       padding: 22px 10px 18px;
       position: relative;
       &::before {
         content: "";
         display: block;
-        background-color: #27262A;
+        background-color: #27262a;
         position: absolute;
         top: 0;
         left: 0;
@@ -182,10 +83,10 @@
         transform: translateX(-10px);
         z-index: -1;
       }
-      &::after{
+      &::after {
         content: "";
         display: block;
-        background-color: #27262A;
+        background-color: #27262a;
         position: absolute;
         top: 0;
         right: 0;
@@ -198,7 +99,7 @@
   }
   &__logo {
     margin-right: auto;
-    @include mediumScreen{
+    @include mediumScreen {
       grid-column: logo;
       grid-row: first;
       margin-right: 0;
@@ -209,7 +110,7 @@
   }
   &__title {
     margin-top: 126px;
-    @include mediumScreen{
+    @include mediumScreen {
       margin-top: 69px;
     }
   }
@@ -220,7 +121,7 @@
     @include textReset;
     @include montserratFont;
     font-size: 14px;
-    color: #848E97;
+    color: #848e97;
     position: absolute;
     left: 50%;
     top: calc(100% + 19px + 32px);
@@ -242,13 +143,13 @@
     color: $violetText;
     font-weight: 700;
   }
-  &:hover &__text{
-    color: #FFFFFF;
+  &:hover &__text {
+    color: #ffffff;
   }
   &:hover &__image {
     display: none;
   }
-  &:hover &__image--hover{
+  &:hover &__image--hover {
     display: block;
   }
   &__image {
@@ -284,8 +185,8 @@
       text-decoration: none;
       color: $violetText;
       font-size: 16px;
-      &:hover{
-        color: #FFFFFF;
+      &:hover {
+        color: #ffffff;
       }
     }
   }
@@ -305,8 +206,8 @@
       grid-row: first;
       justify-self: end;
     }
-    &:hover{
-      background-color: #FFFFFF;
+    &:hover {
+      background-color: #ffffff;
       color: $violetText;
     }
   }

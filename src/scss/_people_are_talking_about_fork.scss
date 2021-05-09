@@ -1,5 +1,4 @@
 @import "variables";
-<<<<<<< HEAD
 @import "mixins";
 
 .people-review {
@@ -18,7 +17,7 @@
       background-position: center;
     }
   }
-  &__title{
+  &__title {
     @include textReset;
     font-size: 48px;
     margin-top: 111px;
@@ -44,7 +43,7 @@
     justify-items: center;
   }
   &__text {
-    color: #A291A5;
+    color: #a291a5;
     @include textReset;
     @include latoFont;
     margin-top: 118px;
@@ -83,13 +82,10 @@
 .reviews-post__text {
   @include textReset;
   @include latoFont;
-  color: #FFF;
+  color: #fff;
   font-size: 16px;
   font-weight: 700;
   font-style: italic;
   margin-top: 33px;
   text-align: center;
 }
-=======
-@import "mixins";
->>>>>>> second

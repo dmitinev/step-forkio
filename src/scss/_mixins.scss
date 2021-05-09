@@ -16,7 +16,6 @@
   margin-top: 0;
   margin-bottom: 0;
   display: inline-flex;
-<<<<<<< HEAD
 }
 
 @mixin mediumScreen {
@@ -29,6 +28,4 @@
   @media screen and (max-width: 480px) and (min-width: 320px) {
     @content;
   }
-=======
->>>>>>> second
 }
