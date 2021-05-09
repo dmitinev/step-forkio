@@ -1,5 +1,31 @@
 @import "variables";
 @import "mixins";
+<<<<<<< HEAD
+=======
+.header {
+  position: relative;
+  min-height: 929px;
+  &__nav {
+  }
+  &::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url("../img/banner_image_macbook.jpg");
+    background-size: 100%;
+    background-position: 50% 40%;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+>>>>>>> second
 
 .container {
   margin-left: auto;
@@ -9,6 +35,70 @@
   padding-right: 10px;
 }
 
+<<<<<<< HEAD
+=======
+.header__content-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 31px;
+}
+
+.header__logo{
+  margin-right: auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo__text {
+  @include latoFont;
+  @include textReset;
+  margin-left: 17px;
+  text-transform: uppercase;
+  color: $violetText;
+  font-weight: 700;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  @include montserratFont;
+  font-weight: 700;
+}
+
+.navigation__menu {
+  @include list-reset;
+  min-width: 527px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 49px;
+  &-link {
+    text-decoration: none;
+    color: $violetText;
+    font-size: 16px;
+  }
+}
+
+.navigation__btn {
+  width: 145px;
+  height: 37px;
+  padding: 0;
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: $violetText;
+}
+
+>>>>>>> second
 .title {
   @include textReset;
   @include montserratFont;
