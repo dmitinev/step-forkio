@@ -1,0 +1,79 @@
+@import "variables";
+@import "mixins";
+.editor {
+  margin-top: 129px;
+  margin-bottom: 70px;
+}
+.editor__tittle {
+  @include montserratFont;
+  font-size: 54px;
+  line-height: 54px;
+  text-align: center;
+  color: #635c73;
+}
+.editor__text {
+  @include latoFont;
+  font-size: 21px;
+  line-height: 32px;
+  align-items: center;
+  text-align: center;
+  color: #323232;
+}
+.editor__btn {
+  @include list-reset;
+  display: flex;
+  justify-content: center;
+  margin-top: 13px;
+}
+.list__number {
+  position: relative;
+  float: left;
+  padding: 3px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #24292e;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-left: 0;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04), hsla(0, 0%, 100%, 0.25);
+}
+.button {
+  position: relative;
+  display: inline-block;
+  padding: 5px 16px;
+  line-height: 20px;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid;
+  border-radius: 6px;
+  appearance: none;
+  color: #24292e;
+  background-color: #fafbfc;
+  border-color: rgba(27, 31, 35, 0.15);
+  box-shadow: rgba(27, 31, 35, 0.04), hsla(0, 0%, 100%, 0.25);
+  transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  transition-property: color, background-color, border-color;
+}
+.btn-with-count {
+  float: left;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.btn-sm {
+  padding: 3px 12px;
+  font-size: 12px;
+  line-height: 20px;
+}
+.octicon {
+  vertical-align: text-top;
+  display: inline-block;
+  fill: currentColor;
+}
+.list__item {
+  padding-left: 10px;
+}
