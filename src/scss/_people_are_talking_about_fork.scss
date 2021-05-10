@@ -16,6 +16,9 @@
     @include mediumScreen {
       background-position: center;
     }
+    @include smallScreen {
+      background-position: center;
+    }
   }
   &__title {
     @include textReset;
@@ -26,6 +29,13 @@
       margin-top: 88px;
       margin-bottom: 85px;
       font-size: 42px;
+    }
+    @include smallScreen{
+      margin-top: 57px;
+      margin-bottom: 53px;
+      font-size: 36px;
+      line-height: 48px;
+      text-align: center;
     }
   }
   &__container {
@@ -41,6 +51,9 @@
     grid-template-columns: repeat(auto-fill, minmax(324px, 1fr));
     grid-row-gap: 112px;
     justify-items: center;
+    @include smallScreen {
+      grid-row-gap: 45px;
+    }
   }
   &__text {
     color: #a291a5;
@@ -57,6 +70,9 @@
     @include mediumScreen {
       margin-top: 67px;
     }
+    @include smallScreen {
+      margin-top: 37px;
+    }
     &-underline {
       max-width: 780px;
       width: 100%;
@@ -66,6 +82,9 @@
       border: none;
       @include mediumScreen {
         max-width: 555px;
+      }
+      @include smallScreen {
+        max-width: 245px;
       }
     }
   }
