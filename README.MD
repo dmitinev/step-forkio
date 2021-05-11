@@ -22,5 +22,6 @@ was done.
     was done.
 9) section: People Are Talking About Fork for (max-width: 480px) and (min-width: 320px)
    was done.
+10) Dropdown menu JS logic
 
 **Tasks Done by Vitalii Tabanets:**
