@@ -348,6 +348,13 @@
   }
 }
 
+.btn__decor {
+  display: block;
+  &--unclicked{
+    @extend .hidden
+  }
+}
+
 .hidden {
   display: none;
 }
