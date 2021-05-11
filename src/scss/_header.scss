@@ -25,8 +25,12 @@
   @include latoFont;
   color: $violetText;
   font-size: 30px;
+  text-align: center;
   @include mediumScreen {
     font-size: 24px;
+  }
+  @include smallScreen {
+    font-size: 18px;
   }
 }
 
@@ -46,6 +50,9 @@
   min-height: 929px;
   @include mediumScreen {
     min-height: 868px;
+  }
+  @include smallScreen {
+    min-height: 718px;
   }
   &::before {
     content: "";
@@ -160,11 +167,19 @@
     @include mediumScreen {
       margin-top: 69px;
     }
+    @include smallScreen{
+      margin-top: 50px;
+      font-size: 48px;
+    }
   }
   &__version-description {
     margin-top: 19px;
+    @include smallScreen{
+      font-size: 14px;
+    }
   }
   &__trial-text {
+    min-width: 241px;
     @include textReset;
     @include montserratFont;
     font-size: 14px;
@@ -174,6 +189,12 @@
     top: calc(100% + 19px + 32px);
     transform: translateX(-50%);
     z-index: 2;
+    @include mediumScreen{
+      top: calc(100% + 12px + 32px);
+    }
+    @include smallScreen{
+      top: calc(100% + 12px + 32px);
+    }
   }
 }
 

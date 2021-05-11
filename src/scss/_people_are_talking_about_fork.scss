@@ -25,6 +25,7 @@
     font-size: 48px;
     margin-top: 111px;
     margin-bottom: 81px;
+    text-align: center;
     @include mediumScreen {
       margin-top: 88px;
       margin-bottom: 85px;
@@ -35,7 +36,6 @@
       margin-bottom: 53px;
       font-size: 36px;
       line-height: 48px;
-      text-align: center;
     }
   }
   &__container {
@@ -53,6 +53,7 @@
     justify-items: center;
     @include smallScreen {
       grid-row-gap: 45px;
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
     }
   }
   &__text {
