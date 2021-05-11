@@ -5,7 +5,7 @@
 4) GULP DEVELOPMENT WORKFLOW
 
 **Project participants:**
-Dmitry Mitinev
+Dmitry Mitinev,
 Vitalii Tabanets
 
 **Tasks Done by Dmitry Mitinev:**
@@ -17,6 +17,10 @@ Vitalii Tabanets
 6) section: header for (max-width: 992px) and (min-width: 481px)
 was done.
 7) section: People Are Talking About Fork for (max-width: 992px) and (min-width: 481px)
+   was done.
+8)  section: header for (max-width: 480px) and (min-width: 320px)
+    was done.
+9) section: People Are Talking About Fork for (max-width: 480px) and (min-width: 320px)
    was done.
 
 **Tasks Done by Vitalii Tabanets:**
