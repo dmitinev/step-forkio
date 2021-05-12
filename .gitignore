@@ -3,6 +3,5 @@
 thumbs.db
 .DS_Store
 node_modules/
-dist/
 logs/
 *.log
