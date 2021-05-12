@@ -4,6 +4,12 @@
 .instruments {
   width: 100%;
   background: #f4f4f4;
+  @include mediumScreen {
+    background: rgba(0, 0, 0, 0.0001);
+  }
+  @include smallScreen {
+    background: rgba(0, 0, 0, 0.0001);
+  }
 }
 .instruments__wrapper {
   display: flex;
@@ -131,8 +137,7 @@
   }
 }
 .intruments__img-baner {
-  width: 102%;
-  margin-right: -10px;
+  width: 100%;
   @include smallScreen {
     height: 381px;
     width: 317px;
@@ -171,6 +176,7 @@
 .intsruments__section--second {
   flex: 1 0;
   width: 50%;
+  margin-right: -10px;
   @include mediumScreen {
     text-align: right;
     width: 100%;
