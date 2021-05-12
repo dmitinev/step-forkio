@@ -10,20 +10,36 @@
   line-height: 54px;
   text-align: center;
   color: #635c73;
+  @include smallScreen {
+    font-size: 26px;
+    line-height: 28px;
+  }
 }
 .editor__text {
   @include latoFont;
   font-size: 21px;
   line-height: 32px;
-  align-items: center;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   color: #323232;
+  max-width: 861px;
+  @include smallScreen {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 .editor__btn {
   @include list-reset;
   display: flex;
   justify-content: center;
   margin-top: 13px;
+
+  @include smallScreen {
+    display: block;
+    text-align: center;
+    justify-content: center;
+  }
 }
 .list__number {
   position: relative;
@@ -76,4 +92,23 @@
 }
 .list__item {
   padding-left: 10px;
+  @include smallScreen {
+    &:nth-child(1) {
+      display: inline-block;
+      justify-content: center;
+      width: 140px;
+      margin-top: 28px;
+    }
+    &:nth-child(2) {
+      display: inline-block;
+      justify-content: center;
+      width: 140px;
+      margin-top: 28px;
+    }
+    &:nth-child(3) {
+      display: flex;
+      justify-content: center;
+      margin-top: 28px;
+    }
+  }
 }

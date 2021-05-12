@@ -1,28 +1,5 @@
 @import "variables";
 @import "mixins";
-.header {
-  position: relative;
-  min-height: 929px;
-  &__nav {
-  }
-  &::before{
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    background-image: url("../img/banner_image_macbook.jpg");
-    background-size: 100%;
-    background-position: 50% 40%;
-  }
-  &__container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-}
 
 .container {
   margin-left: auto;
@@ -32,73 +9,15 @@
   padding-right: 10px;
 }
 
-.header__content-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-top: 31px;
-}
-
-.header__logo{
-  margin-right: auto;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-}
-
-.logo__text {
-  @include latoFont;
-  @include textReset;
-  margin-left: 17px;
-  text-transform: uppercase;
-  color: $violetText;
-  font-weight: 700;
-}
-
-.navigation {
-  display: flex;
-  align-items: center;
-  @include montserratFont;
-  font-weight: 700;
-}
-
-.navigation__menu {
-  @include list-reset;
-  min-width: 527px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-right: 49px;
-  &-link {
-    text-decoration: none;
-    color: $violetText;
-    font-size: 16px;
-  }
-}
-
-.navigation__btn {
-  width: 145px;
-  height: 37px;
-  padding: 0;
-  border-radius: 40px;
-  border: 0;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 700;
-  color: #ffffff;
-  background-color: $violetText;
-}
-
 .title {
   @include textReset;
   @include montserratFont;
   font-weight: 700;
   color: #ffffff;
   font-size: 82px;
+  @include mediumScreen {
+    font-size: 72px;
+  }
 }
 
 .subtitle {
@@ -106,49 +25,357 @@
   @include latoFont;
   color: $violetText;
   font-size: 30px;
+  text-align: center;
+  @include mediumScreen {
+    font-size: 24px;
+  }
+  @include smallScreen {
+    font-size: 18px;
+  }
 }
 
 .description {
   @include textReset;
   @include montserratFont;
-  color: #848E97;
+  color: #848e97;
   text-transform: uppercase;
+  font-size: 16px;
+  @include mediumScreen {
+    font-size: 14px;
+  }
 }
 
-.header__subtitle {
-  margin-top: 19px;
+.header {
+  position: relative;
+  min-height: 929px;
+  @include mediumScreen {
+    min-height: 868px;
+  }
+  @include smallScreen {
+    min-height: 718px;
+  }
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url("../img/banner_image_macbook.jpg");
+    background-size: cover;
+    background-position: 50% 40%;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__content-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 31px;
+    position: relative;
+    @include mediumScreen {
+      display: grid;
+      grid-template-columns: [logo] 1fr [buy_btn] 1fr;
+      grid-template-rows: [first] auto [nav_menu] auto;
+      grid-auto-rows: auto;
+      grid-row-gap: 22px;
+      margin-top: 0;
+      background-color: #27262a;
+      padding: 22px 10px 18px;
+      position: relative;
+      &::before {
+        content: "";
+        display: block;
+        background-color: #27262a;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30%;
+        height: 100%;
+        transform: translateX(-10px);
+        z-index: -1;
+      }
+      &::after {
+        content: "";
+        display: block;
+        background-color: #27262a;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30%;
+        height: 100%;
+        transform: translateX(10px);
+        z-index: -1;
+      }
+    }
+    @include smallScreen {
+      display: grid;
+      margin-top: 0;
+      grid-template-columns: [logo] 1fr [buy_button] 1fr [menu_button] 1fr;
+      grid-template-rows: [first] 1fr;
+      justify-items: center;
+      background-color: #27262a;
+      padding: 34px 6px;
+      &::before {
+        content: "";
+        display: block;
+        background-color: #27262a;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30%;
+        height: 100%;
+        transform: translateX(-10px);
+        z-index: -1;
+      }
+      &::after {
+        content: "";
+        display: block;
+        background-color: #27262a;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30%;
+        height: 100%;
+        transform: translateX(10px);
+        z-index: -1;
+      }
+    }
+  }
+  &__logo {
+    margin-right: auto;
+    @include mediumScreen {
+      grid-column: logo;
+      grid-row: first;
+      margin-right: 0;
+    }
+    @include smallScreen {
+      grid-column: logo;
+      grid-row: first;
+    }
+  }
+  &__subtitle {
+    margin-top: 19px;
+  }
+  &__title {
+    margin-top: 126px;
+    @include mediumScreen {
+      margin-top: 69px;
+    }
+    @include smallScreen{
+      margin-top: 50px;
+      font-size: 48px;
+    }
+  }
+  &__version-description {
+    margin-top: 19px;
+    @include smallScreen{
+      font-size: 14px;
+    }
+  }
+  &__trial-text {
+    min-width: 241px;
+    @include textReset;
+    @include montserratFont;
+    font-size: 14px;
+    color: #848e97;
+    position: absolute;
+    left: 50%;
+    top: calc(100% + 19px + 32px);
+    transform: translateX(-50%);
+    z-index: 2;
+    @include mediumScreen{
+      top: calc(100% + 12px + 32px);
+    }
+    @include smallScreen{
+      top: calc(100% + 12px + 32px);
+    }
+  }
 }
 
-.header__title {
-  margin-top: 126px;
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  position: relative;
+  &__text {
+    @include latoFont;
+    @include textReset;
+    margin-left: 17px;
+    text-transform: uppercase;
+    color: $violetText;
+    font-weight: 700;
+    @include smallScreen {
+      display: none;
+    }
+  }
+  &:hover &__text {
+    color: #ffffff;
+  }
+  &:hover &__image {
+    display: none;
+  }
+  &:hover &__image--hover {
+    display: block;
+  }
+  &__image {
+    &--hover {
+      display: none;
+    }
+  }
 }
 
-.header__version-description {
-  margin-top: 19px;
-  margin-bottom: 459px;
-}
-
-.navigation__download-btn {
+.navigation {
+  display: flex;
+  align-items: center;
   @include montserratFont;
-  background-color: $violetText;
-  @extend .navigation__btn;
-  color: #ffffff;
-  width: 390px;
-  height: 62px;
-  font-size: 21px;
-  position: absolute;
-  top: calc(100% + 32px);
-  left: 50%;
-  transform: translate(-50%, -100%);
+  font-weight: 700;
+  @include mediumScreen {
+    grid-column: logo / end;
+    grid-row: nav_menu;
+    width: 100%;
+  }
+  &__menu {
+    @include list-reset;
+    min-width: 527px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 49px;
+    @include mediumScreen {
+      margin-right: 0;
+      width: 100%;
+      justify-content: space-evenly;
+      min-width: 0;
+    }
+    @include smallScreen {
+      margin-right: 0;
+      flex-direction: column;
+      min-width: 0;
+      width: 100%;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #3B3B3B;
+      &-item {
+        width: 100%;
+        background-color: #333333;
+        margin-bottom: 5px;
+      }
+    }
+    &-link {
+      text-decoration: none;
+      color: $violetText;
+      font-size: 16px;
+      @include smallScreen {
+        display: flex;
+        padding-left: 35px;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 26px;
+        font-weight: 400;
+        color: #fff;
+        background-color: #333333;
+        min-height: 88px;
+        width: 100%;
+        position: relative;
+        &--active {
+          color: $violetText;
+          &::before{
+            content: "";
+            display: block;
+            width: 8px;
+            height: 53px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            background-color: $violetText;
+          }
+        }
+      }
+      &:hover {
+        color: #ffffff;
+      }
+    }
+    &-btn {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: flex-end;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      width: 32px;
+      height: 32px;
+      padding: 0;
+      @include smallScreen{
+        grid-column: menu_button;
+        grid-row: first;
+        margin-left: auto;
+        display: flex;
+      }
+    }
+  }
+  &__btn {
+    width: 145px;
+    height: 37px;
+    padding: 0;
+    border-radius: 40px;
+    border: 0;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: $violetText;
+    @include mediumScreen {
+      grid-column: buy_btn;
+      grid-row: first;
+      justify-self: end;
+    }
+    @include smallScreen {
+      grid-column: buy_button;
+      grid-row: first;
+      width: 119px;
+    }
+    &:hover {
+      background-color: #ffffff;
+      color: $violetText;
+    }
+  }
+  &__download-btn {
+    @include montserratFont;
+    background-color: $violetText;
+    @extend .navigation__btn;
+    color: #ffffff;
+    width: 390px;
+    height: 62px;
+    font-size: 21px;
+    position: absolute;
+    top: calc(100% + 32px);
+    left: 50%;
+    transform: translate(-50%, -100%);
+    z-index: 2;
+    @include smallScreen {
+      width: 290px;
+      font-size: 18px;
+    }
+  }
 }
 
-.header__trial-text {
-  @include textReset;
-  @include montserratFont;
-  font-size: 14px;
-  color: #848E97;
-  position: absolute;
-  left: 50%;
-  top: calc(100% + 19px + 32px);
-  transform: translateX(-50%);
+.btn__decor {
+  display: block;
+  &--unclicked{
+    @extend .hidden
+  }
+}
+
+.hidden {
+  display: none;
 }

@@ -15,17 +15,38 @@
         <div class="header__content-wrapper">
             <a href="#" class="header__logo logo">
                 <img src="dist/img/logo_image.png" alt="logo image" class="logo__image">
+                <img src="dist/img/logo_image_hover.png" alt="logo image" class="logo__image--hover">
                 <p class="logo__text">Forkio</p>
             </a>
             <nav class="header__nav navigation">
                 <ul class="navigation__menu">
-                    <li class="navigation__menu-item"><a href="#" class="navigation__menu-link">Overview</a></li>
+                    <li class="navigation__menu-item">
+                        <a href="#" class="navigation__menu-link navigation__menu-link--active">Overview</a></li>
                     <li class="navigation__menu-item"><a href="#" class="navigation__menu-link">About Fork</a></li>
                     <li class="navigation__menu-item"><a href="#" class="navigation__menu-link">Buying Options</a></li>
                     <li class="navigation__menu-item"><a href="#" class="navigation__menu-link">Support</a></li>
                 </ul>
             </nav>
             <button class="btn navigation__btn">Buy Now</button>
+            <button class="btn navigation__menu-btn hidden">
+                <svg width="15" height="3" viewBox="0 0 15 3" fill="none" xmlns="http://www.w3.org/2000/svg"
+                     class="btn__decor">
+                    <rect width="15" height="3" rx="1.5" fill="white"/>
+                </svg>
+                <svg width="26" height="3" viewBox="0 0 26 3" fill="none" xmlns="http://www.w3.org/2000/svg"
+                     class="btn__decor">
+                    <rect width="26" height="3" rx="1.5" fill="white"/>
+                </svg>
+                <svg width="26" height="3" viewBox="0 0 26 3" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="btn__decor">
+                    <rect width="26" height="3" rx="1.5" fill="white"/>
+                </svg>
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="btn__decor btn__decor--unclicked">
+                    <path d="M1 1L23.5 24" stroke="white" stroke-width="2"/>
+                    <path d="M1 23L24 1" stroke="white" stroke-width="2"/>
+                </svg>
+            </button>
         </div>
         <h1 class="header__title title">Fork App</h1>
         <p class="header__subtitle subtitle">A real gamechanger in the world of web development</p>
@@ -35,13 +56,12 @@
     </div>
 </header>
 <main class="main-content">
-    <section class="editor">
+    <section class="editor container">
     <h2 class="editor__tittle">
         Revolutionary editor
     </h2>
     <p class="editor__text"> Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate
-        dignissim.</p>
-    <p class="editor__text">Sed id metus id quam auctor molestie eget ut augue.</p>
+        dignissim. Sed id metus id quam auctor molestie eget ut augue.</p>
     <ul class="editor__btn list">
         <li class="list__item">
             <button class="button btn-sm btn-with-count">
@@ -85,8 +105,11 @@
 
 </section>
     <section class="instruments">
-    <div class="instruments__wrapper">
+    <div class="instruments__wrapper container">
         <div class="intsruments__section intsruments__section--first">
+            <h2 class="instruments__tittle--mob">
+                < Here is what you get>
+            </h2>
             <ul class="instruments__list">
                 <li class="instruments__item instruments__item-tools">
                     <img src="dist/img/icon1 1.png" alt="" class="intruments__img--first" width="111" height="64">
@@ -140,13 +163,13 @@
             <h2 class="instruments__tittle">
                 < Here is what you get>
             </h2>
-            <img src="dist/img/editor 1.png" alt="editor" class="intruments__img-baner" width="700" height="519">
+            <img src="dist/img/editor 1.png" alt="editor" class="intruments__img-baner">
         </div>
     </div>
 
 </section>
     <section class="people-review">
-    <div class="container">
+    <div class="container people-review__container">
         <h2 class="people-review__title title">People Are Talking About Fork</h2>
         <ul class="people-review__reviews reviews">
             <li class="reviews__item reviews-post">
@@ -183,9 +206,53 @@
         <p class="people-review__text">Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae
             aliquet id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci. Cum
             sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+        <hr class="people-review__text-underline">
     </div>
 </section>
-    
+    <section class="sub ">
+    <div class="container">
+        <h2 class="sub__tittle">
+            Fork Subscription Pricing
+        </h2>
+        <ul class="sub__list">
+            <li class="sub__item item">
+                <p class="sub__headere">students</p>
+                <p class="sub__text-number">$29</p>
+                <p class="sub__text item__month">per month</p>
+                <hr class="sub__text-underline">
+                <p class="sub__text sub__text-second">Personal License</p>
+                <a href="" class="sub__link sub__link-first">purchase</a>
+            </li>
+            <li class="sub__item">
+                <p class="sub__headere">professional</p>
+                <p class="sub__text-number">$59</p>
+                <p class="sub__text item__month">per month</p>
+                <hr class="sub__text-underline">
+                <p class="sub__text sub__text-second">Professional License</p>
+                <p class="sub__text sub__text-second">Email Support</p>
+                <a href="" class="sub__link sub__link-second">purchase</a>
+            </li>
+            <li class="sub__item">
+                <p class="sub__headere--main">agency</p>
+                <p class=" sub__text-number--main">$99</p>
+                <p class="sub__text sub__text--main">per month</p>
+                <hr class="sub__text-underline--main ">
+                <p class="sub__text sub__text--main">1-12 Team Members</p>
+                <p class="sub__text sub__text--main">Phone Support</p>
+                <a href="" class="sub__link sub__link--main">purchase</a>
+            </li>
+            <li class="sub__item">
+                <p class="sub__headere">enterprise</p>
+                <p class="sub__text-number">$159</p>
+                <p class="sub__text item__month">per month</p>
+                <hr class="sub__text-underline">
+                <p class="sub__text sub__text-second">Unlimited Team Members</p>
+                <p class="sub__text sub__text-second">24/ 7 Phone Support</p>
+                <a href="" class="sub__link sub__link-four">purchase</a>
+            </li>
+        </ul>
+    </div>
+</section>
 </main>
 </body>
 </html>

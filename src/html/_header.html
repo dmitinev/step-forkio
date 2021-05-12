@@ -3,17 +3,38 @@
         <div class="header__content-wrapper">
             <a href="#" class="header__logo logo">
                 <img src="dist/img/logo_image.png" alt="logo image" class="logo__image">
+                <img src="dist/img/logo_image_hover.png" alt="logo image" class="logo__image--hover">
                 <p class="logo__text">Forkio</p>
             </a>
             <nav class="header__nav navigation">
                 <ul class="navigation__menu">
-                    <li class="navigation__menu-item"><a href="#" class="navigation__menu-link">Overview</a></li>
+                    <li class="navigation__menu-item">
+                        <a href="#" class="navigation__menu-link navigation__menu-link--active">Overview</a></li>
                     <li class="navigation__menu-item"><a href="#" class="navigation__menu-link">About Fork</a></li>
                     <li class="navigation__menu-item"><a href="#" class="navigation__menu-link">Buying Options</a></li>
                     <li class="navigation__menu-item"><a href="#" class="navigation__menu-link">Support</a></li>
                 </ul>
             </nav>
             <button class="btn navigation__btn">Buy Now</button>
+            <button class="btn navigation__menu-btn hidden">
+                <svg width="15" height="3" viewBox="0 0 15 3" fill="none" xmlns="http://www.w3.org/2000/svg"
+                     class="btn__decor">
+                    <rect width="15" height="3" rx="1.5" fill="white"/>
+                </svg>
+                <svg width="26" height="3" viewBox="0 0 26 3" fill="none" xmlns="http://www.w3.org/2000/svg"
+                     class="btn__decor">
+                    <rect width="26" height="3" rx="1.5" fill="white"/>
+                </svg>
+                <svg width="26" height="3" viewBox="0 0 26 3" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="btn__decor">
+                    <rect width="26" height="3" rx="1.5" fill="white"/>
+                </svg>
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="btn__decor btn__decor--unclicked">
+                    <path d="M1 1L23.5 24" stroke="white" stroke-width="2"/>
+                    <path d="M1 23L24 1" stroke="white" stroke-width="2"/>
+                </svg>
+            </button>
         </div>
         <h1 class="header__title title">Fork App</h1>
         <p class="header__subtitle subtitle">A real gamechanger in the world of web development</p>

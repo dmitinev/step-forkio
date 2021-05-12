@@ -17,3 +17,15 @@
   margin-bottom: 0;
   display: inline-flex;
 }
+
+@mixin mediumScreen {
+  @media screen and (max-width: 992px) and (min-width: 481px) {
+    @content;
+  }
+}
+
+@mixin smallScreen {
+  @media screen and (max-width: 480px) and (min-width: 320px) {
+    @content;
+  }
+}
