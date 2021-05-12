@@ -38,8 +38,6 @@
   @include list-reset;
 }
 .instruments__item {
-  &:nth-child(1) {
-  }
   &:nth-child(2) {
     padding-left: 1px;
   }
@@ -133,12 +131,11 @@
   }
 }
 .intruments__img-baner {
-  width: 600px;
+  width: 102%;
   margin-right: -10px;
   @include smallScreen {
     height: 381px;
     width: 317px;
-    margin-right: 0;
   }
 }
 .instruments__text--head--first {
@@ -177,9 +174,11 @@
   @include mediumScreen {
     text-align: right;
     width: 100%;
+    flex: auto;
   }
   @include smallScreen {
     text-align: right;
     width: 100%;
+    flex: auto;
   }
 }
