@@ -4,46 +4,68 @@
 .instruments {
   width: 100%;
   background: #f4f4f4;
-  margin-bottom: 13px;
 }
 .instruments__wrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
   margin: 0;
-  padding-left: 90px;
-  padding-top: 98px;
+  padding-top: 94px;
   flex-direction: row;
+  @include mediumScreen {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  @include smallScreen {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+  }
 }
 .intsruments__section--first {
   flex: 1 0;
-  width: calc(50% - 70px);
+  width: 50%;
+  @include smallScreen {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 62px 6.25% 0 6.25%;
+  }
 }
 .instruments__list {
   @include list-reset;
 }
 .instruments__item {
   &:nth-child(1) {
-    margin-bottom: 35px;
   }
   &:nth-child(2) {
     padding-left: 1px;
-    margin-bottom: 35px;
   }
   &:nth-child(3) {
     padding-left: 16px;
-    margin-bottom: 35px;
   }
   &:nth-child(4) {
     padding-left: 11px;
+  }
+  @include smallScreen {
+    padding: 0;
+    margin-bottom: 40px;
+    text-align: center;
   }
 }
 .instruments__item-tools {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 110px;
+  @include smallScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
+
 .instruments__text--head {
   @include montserratFont;
   font-style: normal;
@@ -51,6 +73,9 @@
   font-size: 16px;
   line-height: 21px;
   color: #323232;
+  @include smallScreen {
+    margin-bottom: 14px;
+  }
 }
 .instruments__text {
   @include montserratFont;
@@ -64,31 +89,97 @@
   @include montserratFont;
   font-style: normal;
   font-weight: bold;
-  font-size: 48px;
+  font-size: 46px;
   line-height: 50px;
   margin-top: 0;
   margin-bottom: 19px;
-  padding-left: 30px;
   color: #8d81ac;
+  @include smallScreen {
+    display: none;
+  }
+  @include mediumScreen {
+    display: none;
+  }
 }
 .instruments__compact {
   align-items: center;
 }
 .intruments__img--first {
   margin-right: 23px;
+  @include smallScreen {
+    margin-bottom: 27px;
+    margin-right: 0;
+  }
 }
 .intruments__img--second {
   margin-right: 44px;
+  @include smallScreen {
+    margin-bottom: 21px;
+    margin-right: 0;
+  }
 }
 .intruments__img--third {
   margin-right: 59px;
+  @include smallScreen {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
 }
 .intruments__img--four {
   margin-right: 53px;
+  @include smallScreen {
+    margin-bottom: 23px;
+    margin-right: 0;
+  }
 }
 .intruments__img-baner {
-  width: 100%;
+  width: 600px;
+  margin-right: -10px;
+  @include smallScreen {
+    height: 381px;
+    width: 317px;
+    margin-right: 0;
+  }
 }
 .instruments__text--head--first {
   margin-top: 0;
+}
+.instruments__tittle--mob {
+  display: none;
+  @include mediumScreen {
+    display: block;
+    @include montserratFont;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    font-size: 42px;
+    line-height: 44px;
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: #8d81ac;
+  }
+  @include smallScreen {
+    display: block;
+    @include montserratFont;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    font-size: 32px;
+    line-height: 38px;
+    margin-top: 0;
+    margin-bottom: 36px;
+    color: #8d81ac;
+  }
+}
+.intsruments__section--second {
+  flex: 1 0;
+  width: 50%;
+  @include mediumScreen {
+    text-align: right;
+    width: 100%;
+  }
+  @include smallScreen {
+    text-align: right;
+    width: 100%;
+  }
 }
