@@ -10,6 +10,7 @@
     z-index: -1;
     background-image: url("../img/testmonials-bg 1.jpg");
     background-size: cover;
+    background-position: 50% 90%;
     @include mediumScreen {
       background-position: center;
       background-size: cover;

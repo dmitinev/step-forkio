@@ -366,6 +366,9 @@
       width: 290px;
       font-size: 18px;
     }
+    &:hover {
+      border: 2px solid $highlighted-text;
+    }
   }
 }
 
