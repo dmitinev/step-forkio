@@ -1,6 +1,3 @@
-@import "variables";
-@import "mixins";
-
 .instruments {
   width: 100%;
   background: #f4f4f4;
@@ -71,7 +68,7 @@
 }
 
 .instruments__text--head {
-  @include montserratFont;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -82,7 +79,7 @@
   }
 }
 .instruments__text {
-  @include montserratFont;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -90,7 +87,7 @@
   color: #848e97;
 }
 .instruments__tittle {
-  @include montserratFont;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 46px;
@@ -149,7 +146,7 @@
   display: none;
   @include mediumScreen {
     display: block;
-    @include montserratFont;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: bold;
     text-align: center;
@@ -161,7 +158,7 @@
   }
   @include smallScreen {
     display: block;
-    @include montserratFont;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: bold;
     text-align: center;

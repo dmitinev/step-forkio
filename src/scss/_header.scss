@@ -1,6 +1,3 @@
-@import "variables";
-@import "mixins";
-
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -11,7 +8,7 @@
 
 .title {
   @include textReset;
-  @include montserratFont;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: #ffffff;
   font-size: 82px;
@@ -22,8 +19,8 @@
 
 .subtitle {
   @include textReset;
-  @include latoFont;
-  color: $violetText;
+  font-family: "Lato", sans-serif;
+  color: $highlighted-text;
   font-size: 30px;
   text-align: center;
   @include mediumScreen {
@@ -36,7 +33,7 @@
 
 .description {
   @include textReset;
-  @include montserratFont;
+  font-family: "Montserrat", sans-serif;
   color: #848e97;
   text-transform: uppercase;
   font-size: 16px;
@@ -181,7 +178,7 @@
   &__trial-text {
     min-width: 241px;
     @include textReset;
-    @include montserratFont;
+    font-family: "Montserrat", sans-serif;
     font-size: 14px;
     color: #848e97;
     position: absolute;
@@ -204,11 +201,11 @@
   text-decoration: none;
   position: relative;
   &__text {
-    @include latoFont;
+    font-family: "Lato", sans-serif;
     @include textReset;
     margin-left: 17px;
     text-transform: uppercase;
-    color: $violetText;
+    color: $highlighted-text;
     font-weight: 700;
     @include smallScreen {
       display: none;
@@ -233,7 +230,7 @@
 .navigation {
   display: flex;
   align-items: center;
-  @include montserratFont;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   @include mediumScreen {
     grid-column: logo / end;
@@ -271,7 +268,7 @@
     }
     &-link {
       text-decoration: none;
-      color: $violetText;
+      color: $highlighted-text;
       font-size: 16px;
       @include smallScreen {
         display: flex;
@@ -286,7 +283,7 @@
         width: 100%;
         position: relative;
         &--active {
-          color: $violetText;
+          color: $highlighted-text;
           &::before{
             content: "";
             display: block;
@@ -296,7 +293,7 @@
             top: 50%;
             left: 0;
             transform: translateY(-50%);
-            background-color: $violetText;
+            background-color: $highlighted-text;
           }
         }
       }
@@ -324,6 +321,8 @@
     }
   }
   &__btn {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
     width: 145px;
     height: 37px;
     padding: 0;
@@ -331,9 +330,8 @@
     border: 0;
     cursor: pointer;
     font-size: 16px;
-    font-weight: 700;
     color: #ffffff;
-    background-color: $violetText;
+    background-color: $highlighted-text;
     @include mediumScreen {
       grid-column: buy_btn;
       grid-row: first;
@@ -346,15 +344,17 @@
     }
     &:hover {
       background-color: #ffffff;
-      color: $violetText;
+      color: $highlighted-text;
     }
   }
   &__download-btn {
-    @include montserratFont;
-    background-color: $violetText;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    background-color: $highlighted-text;
     @extend .navigation__btn;
     color: #ffffff;
-    width: 390px;
+    max-width: 390px;
+    width: 100%;
     height: 62px;
     font-size: 21px;
     position: absolute;

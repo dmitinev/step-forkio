@@ -1,7 +1,5 @@
-@import "variables";
-@import "mixins";
 .sub__tittle {
-  @include montserratFont;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   font-style: normal;
   font-weight: bold;
@@ -18,9 +16,11 @@
 }
 .sub {
   background-image: url(../img/Layer21.png);
+  background-size: cover;
   margin-top: -9px;
   @include smallScreen {
     margin-top: -15px;
+    background-size: cover;
   }
 }
 
@@ -42,7 +42,7 @@
   }
 }
 .sub__item {
-  @include montserratFont;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
 
   &:nth-child(1) {
@@ -50,8 +50,8 @@
     width: 257px;
     height: 494px;
     margin-bottom: 100px;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     background: rgba($color: #fff, $alpha: 0.11);
   }
   &:nth-child(2) {
@@ -59,8 +59,8 @@
     width: 257px;
     height: 494px;
     margin-bottom: 100px;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     background: rgba($color: #fff, $alpha: 0.11);
   }
   &:nth-child(3) {
@@ -74,8 +74,8 @@
     width: 257px;
     height: 494px;
     margin-bottom: 100px;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     background: rgba($color: #fff, $alpha: 0.11);
   }
   @include mediumScreen {
@@ -116,9 +116,9 @@
   }
 }
 .sub__headere {
-  @include montserratFont;
+  font-family: "Montserrat", sans-serif;
   &:nth-child(1) {
-    @include montserratFont;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: normal;
     width: 100%;
@@ -132,7 +132,7 @@
     background: rgba($color: #fff, $alpha: 0.06);
   }
   &:nth-child(2) {
-    @include montserratFont;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: normal;
     width: 100%;
@@ -146,7 +146,7 @@
     background: rgba($color: #fff, $alpha: 0.06);
   }
   &:nth-child(4) {
-    @include montserratFont;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: normal;
     width: 100%;
@@ -161,7 +161,7 @@
   }
 }
 .sub__text-number--main {
-  @include montserratFont;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 82px;
@@ -171,7 +171,7 @@
   color: #fff;
 }
 .sub__headere--main {
-  @include montserratFont;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -195,7 +195,7 @@
   border: none;
 }
 .sub__text-number {
-  @include montserratFont;
+  font-family: "Montserrat", sans-serif;
   color: #fff;
   &:nth-child(1) {
     font-size: 60px;
@@ -217,7 +217,7 @@
   }
 }
 .sub__text {
-  @include montserratFont;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
